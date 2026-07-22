@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://nvylhcr2ulwv"]
+
+[ext_resource type="Texture2D" uid="uid://dk1ctvm6xlmwt" path="res://Assets/Test Sprites/s_testWall.png" id="1_pdtde"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4wthd"]
+size = Vector2(64, 64)
+
+[node name="OWall" type="CharacterBody2D" unique_id=1535871902]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1373581677]
+texture_filter = 1
+texture = ExtResource("1_pdtde")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1297780542]
+shape = SubResource("RectangleShape2D_4wthd")

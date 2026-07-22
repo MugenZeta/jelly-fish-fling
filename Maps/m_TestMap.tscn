@@ -1,3 +1,31 @@
 [gd_scene format=3 uid="uid://damse0ityey3y"]
 
+[ext_resource type="PackedScene" uid="uid://cet8fujfxr876" path="res://Objects/o_Player.tscn" id="1_x7okm"]
+[ext_resource type="PackedScene" uid="uid://nvylhcr2ulwv" path="res://Objects/o_Wall.tscn" id="2_ppdo8"]
+
 [node name="MTestMap" type="Node2D" unique_id=1853254307]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1913015083]
+position = Vector2(578, 327)
+
+[node name="Player" parent="." unique_id=1189530704 instance=ExtResource("1_x7okm")]
+position = Vector2(570, 229)
+
+[node name="OWall" parent="." unique_id=45990076 instance=ExtResource("2_ppdo8")]
+position = Vector2(351, 390)
+
+[node name="OWall2" parent="." unique_id=1535871902 instance=ExtResource("2_ppdo8")]
+position = Vector2(572, 500)
+scale = Vector2(5, 1)
+
+[node name="OWall3" parent="." unique_id=991793123 instance=ExtResource("2_ppdo8")]
+position = Vector2(9, 295)
+scale = Vector2(0.5, 11)
+
+[node name="OWall4" parent="." unique_id=139842750 instance=ExtResource("2_ppdo8")]
+position = Vector2(1133, 295)
+scale = Vector2(0.5, 11)
+
+[node name="OWall5" parent="." unique_id=1386172384 instance=ExtResource("2_ppdo8")]
+position = Vector2(550, 614)
+scale = Vector2(10, 1)
