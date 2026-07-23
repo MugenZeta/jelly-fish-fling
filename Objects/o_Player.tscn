@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://cet8fujfxr876"]
 
 [ext_resource type="Texture2D" uid="uid://b5mrhjaplxbqn" path="res://Assets/Test Sprites/s_testPlayer.png" id="1_qq34h"]
-[ext_resource type="Script" uid="uid://c6wd6e3yq3nwt" path="res://Objects/s_player.gd" id="1_tx4u5"]
+[ext_resource type="Script" uid="uid://c6wd6e3yq3nwt" path="res://Scripts/s_player.gd" id="1_tx4u5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_85ngs"]
 radius = 16.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4wthd"]
+size = Vector2(53, 49)
 
 [node name="Player" type="CharacterBody2D" unique_id=1342499611]
 script = ExtResource("1_tx4u5")
@@ -13,5 +16,11 @@ script = ExtResource("1_tx4u5")
 texture_filter = 1
 texture = ExtResource("1_qq34h")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1886884031]
+[node name="PlayerHitbox" type="CollisionShape2D" parent="." unique_id=1886884031]
 shape = SubResource("CircleShape2D_85ngs")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1897437519]
+
+[node name="MouseCollision" type="CollisionShape2D" parent="Area2D" unique_id=1234984035]
+position = Vector2(-0.5, 1.5)
+shape = SubResource("RectangleShape2D_4wthd")
