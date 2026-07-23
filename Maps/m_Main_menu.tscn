@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://d0npud3ay4a30"]
+
+[ext_resource type="Script" uid="uid://o7j7bvgfajum" path="res://main_menu.gd" id="1_y53oh"]
+[ext_resource type="Texture2D" uid="uid://dkobyl42aoxid" path="res://cover.png" id="2_46h4j"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ogq8d"]
+texture = ExtResource("2_46h4j")
+
+[node name="Main Menu" type="Node2D" unique_id=1066719699]
+script = ExtResource("1_y53oh")
+
+[node name="Panel" type="Panel" parent="." unique_id=1941040527]
+offset_left = 28.0
+offset_top = 113.0
+offset_right = 1041.0
+offset_bottom = 646.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ogq8d")
+
+[node name="Button_manager" type="Control" parent="." unique_id=1404335600]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="start" type="Button" parent="Button_manager" unique_id=1103564714]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 6.1930003
+anchor_bottom = 3.7440002
+offset_left = 422.0
+offset_top = 280.0
+offset_right = 392.27997
+offset_bottom = 215.23999
+text = "Start"
+
+[node name="options" type="Button" parent="Button_manager" unique_id=776787523]
+layout_mode = 0
+offset_left = 418.0
+offset_top = 385.0
+offset_right = 642.0
+offset_bottom = 474.0
+text = "Options"
+
+[node name="Quit" type="Button" parent="Button_manager" unique_id=1981313434]
+layout_mode = 0
+offset_left = 418.0
+offset_top = 500.0
+offset_right = 642.0
+offset_bottom = 589.0
+text = "Quit"
