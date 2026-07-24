@@ -9,7 +9,7 @@
 position = Vector2(578, 327)
 
 [node name="Player" parent="." unique_id=1189530704 instance=ExtResource("1_x7okm")]
-position = Vector2(570, 229)
+position = Vector2(567, 439)
 
 [node name="OWall" parent="." unique_id=45990076 instance=ExtResource("2_ppdo8")]
 position = Vector2(351, 390)
