@@ -16,7 +16,7 @@ func _on_start_pressed() -> void:
 
 
 func _on_options_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Maps/m_optionsmenu.tscn")
 
 
 func _on_quit_pressed() -> void:

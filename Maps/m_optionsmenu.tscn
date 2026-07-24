@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c48srqcx60bxh"]
+
+[ext_resource type="Texture2D" uid="uid://b4c2k6yns5x16" path="res://Assets/place holder images/istockphoto-153556997-612x612.jpg" id="1_eu15r"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ogq8d"]
+texture = ExtResource("1_eu15r")
+
+[node name="MOptionsmenu" type="Node2D" unique_id=1596394947]
+
+[node name="Panel" type="Panel" parent="." unique_id=1095664642]
+offset_right = 1155.0
+offset_bottom = 649.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ogq8d")
+
+[node name="Control" type="Control" parent="." unique_id=1861452855]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
