@@ -24,6 +24,3 @@ shape = SubResource("CircleShape2D_85ngs")
 [node name="MouseCollision" type="CollisionShape2D" parent="Area2D" unique_id=1234984035]
 position = Vector2(-0.5, 1.5)
 shape = SubResource("RectangleShape2D_4wthd")
-
-[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
