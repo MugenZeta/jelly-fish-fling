@@ -10,7 +10,6 @@ extends CharacterBody2D
 var inArea = false
 var isAlive = true
 @onready var Clickable_Area = $Area2D/MouseCollision
-@onready var sprites = $Sprite2D
 func _ready() -> void:
 	pass
 
