@@ -1,13 +1,8 @@
-[gd_scene format=3 uid="uid://d0npud3ay4a30"]
-
-[ext_resource type="Script" uid="uid://o7j7bvgfajum" path="res://main_menu.gd" id="1_y53oh"]
-[ext_resource type="Texture2D" uid="uid://dkobyl42aoxid" path="res://cover.png" id="2_46h4j"]
+[gd_scene format=3 uid="uid://cva7moi2c6qui"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ogq8d"]
-texture = ExtResource("2_46h4j")
 
 [node name="Main Menu" type="Node2D" unique_id=1066719699]
-script = ExtResource("1_y53oh")
 
 [node name="Panel" type="Panel" parent="." unique_id=1941040527]
 offset_left = 28.0
