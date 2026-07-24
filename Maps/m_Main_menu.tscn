@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://cva7moi2c6qui"]
 
+[ext_resource type="Script" uid="uid://xji88lf77lmr" path="res://Maps/m_main_menu.gd" id="1_niko4"]
+
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ogq8d"]
 
 [node name="Main Menu" type="Node2D" unique_id=1066719699]
+script = ExtResource("1_niko4")
 
 [node name="Panel" type="Panel" parent="." unique_id=1941040527]
 offset_left = 28.0
@@ -20,26 +23,36 @@ offset_bottom = 40.0
 [node name="start" type="Button" parent="Button_manager" unique_id=1103564714]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 6.1930003
-anchor_bottom = 3.7440002
+anchor_right = 28.792002
+anchor_bottom = 16.219
 offset_left = 422.0
 offset_top = 280.0
-offset_right = 392.27997
-offset_bottom = 215.23999
+offset_right = -511.68005
+offset_bottom = -283.76
 text = "Start"
 
 [node name="options" type="Button" parent="Button_manager" unique_id=776787523]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.828001
+anchor_bottom = 16.186
 offset_left = 418.0
 offset_top = 385.0
-offset_right = 642.0
-offset_bottom = 474.0
+offset_right = -511.12
+offset_bottom = -173.44006
 text = "Options"
 
 [node name="Quit" type="Button" parent="Button_manager" unique_id=1981313434]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.748001
+anchor_bottom = 16.105001
 offset_left = 418.0
 offset_top = 500.0
-offset_right = 642.0
-offset_bottom = 589.0
+offset_right = -507.92004
+offset_bottom = -55.200073
 text = "Quit"
+
+[connection signal="pressed" from="Button_manager/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button_manager/options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Button_manager/Quit" to="." method="_on_quit_pressed"]
