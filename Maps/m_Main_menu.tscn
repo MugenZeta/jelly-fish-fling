@@ -1,8 +1,32 @@
 [gd_scene format=3 uid="uid://cva7moi2c6qui"]
 
 [ext_resource type="Script" uid="uid://xji88lf77lmr" path="res://Maps/m_main_menu.gd" id="1_niko4"]
+[ext_resource type="Texture2D" uid="uid://dcdwffi473gur" path="res://Assets/buttons/start1.png" id="2_sduc7"]
+[ext_resource type="Texture2D" uid="uid://dqf2jbr8no4db" path="res://Assets/buttons/start12.png" id="3_jxnyh"]
+[ext_resource type="Texture2D" uid="uid://cuayi2qh6d4sa" path="res://Assets/buttons/options.png" id="4_6yjqt"]
+[ext_resource type="Texture2D" uid="uid://pnbvfp47iykb" path="res://Assets/buttons/options2.png" id="5_8uf7q"]
+[ext_resource type="Texture2D" uid="uid://b3wuuah64cr42" path="res://Assets/buttons/quit1.png" id="6_ywa8y"]
+[ext_resource type="Texture2D" uid="uid://c5jqnu3utcr6p" path="res://Assets/buttons/quit2.png" id="7_figty"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ogq8d"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_njwvf"]
+texture = ExtResource("2_sduc7")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s6xo6"]
+texture = ExtResource("3_jxnyh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0a32q"]
+texture = ExtResource("4_6yjqt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b21jd"]
+texture = ExtResource("5_8uf7q")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vhj1a"]
+texture = ExtResource("6_ywa8y")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pa5ro"]
+texture = ExtResource("7_figty")
 
 [node name="Main Menu" type="Node2D" unique_id=1066719699]
 script = ExtResource("1_niko4")
@@ -25,33 +49,36 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.792002
 anchor_bottom = 16.219
-offset_left = 422.0
+offset_left = 470.0
 offset_top = 280.0
-offset_right = -511.68005
+offset_right = -463.68005
 offset_bottom = -283.76
-text = "Start"
+theme_override_styles/normal = SubResource("StyleBoxTexture_njwvf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_s6xo6")
 
 [node name="options" type="Button" parent="Button_manager" unique_id=776787523]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.828001
 anchor_bottom = 16.186
-offset_left = 418.0
-offset_top = 385.0
-offset_right = -511.12
-offset_bottom = -173.44006
-text = "Options"
+offset_left = 462.0
+offset_top = 393.0
+offset_right = -467.12
+offset_bottom = -165.44006
+theme_override_styles/normal = SubResource("StyleBoxTexture_0a32q")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_b21jd")
 
 [node name="Quit" type="Button" parent="Button_manager" unique_id=1981313434]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.748001
 anchor_bottom = 16.105001
-offset_left = 418.0
-offset_top = 500.0
-offset_right = -507.92004
-offset_bottom = -55.200073
-text = "Quit"
+offset_left = 460.0
+offset_top = 501.0
+offset_right = -465.92004
+offset_bottom = -54.200073
+theme_override_styles/normal = SubResource("StyleBoxTexture_vhj1a")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_pa5ro")
 
 [connection signal="pressed" from="Button_manager/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Button_manager/options" to="." method="_on_options_pressed"]
