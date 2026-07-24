@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dbxdc4h80r0xx"]
 
-[ext_resource type="Script" uid="uid://yr47bsaavw1x" path="res://Maps/m_mainmenu.gd" id="1_rjv0i"]
+[ext_resource type="Script" uid="uid://yr47bsaavw1x" path="res://Scripts/s_mainmenu.gd" id="1_rjv0i"]
 [ext_resource type="Texture2D" uid="uid://bvog7owdy3ld4" path="res://Assets/cover.png" id="2_dgpmp"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ogq8d"]
