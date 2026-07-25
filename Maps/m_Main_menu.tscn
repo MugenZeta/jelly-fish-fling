@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cva7moi2c6qui"]
 
 [ext_resource type="Script" uid="uid://xji88lf77lmr" path="res://Maps/m_main_menu.gd" id="1_niko4"]
+[ext_resource type="Texture2D" uid="uid://cyclrmpumules" path="res://Assets/tiles/background/Sprite-0017.png" id="2_jxnyh"]
 [ext_resource type="Texture2D" uid="uid://dcdwffi473gur" path="res://Assets/buttons/start1.png" id="2_sduc7"]
 [ext_resource type="Texture2D" uid="uid://dqf2jbr8no4db" path="res://Assets/buttons/start12.png" id="3_jxnyh"]
 [ext_resource type="Texture2D" uid="uid://cuayi2qh6d4sa" path="res://Assets/buttons/options.png" id="4_6yjqt"]
@@ -9,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://c5jqnu3utcr6p" path="res://Assets/buttons/quit2.png" id="7_figty"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ogq8d"]
+texture = ExtResource("2_jxnyh")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_njwvf"]
 texture = ExtResource("2_sduc7")
@@ -49,10 +51,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.792002
 anchor_bottom = 16.219
-offset_left = 470.0
-offset_top = 280.0
-offset_right = -463.68005
-offset_bottom = -283.76
+offset_left = 438.0
+offset_top = 325.0
+offset_right = -495.68005
+offset_bottom = -238.76001
 theme_override_styles/normal = SubResource("StyleBoxTexture_njwvf")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_s6xo6")
 
@@ -61,10 +63,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.828001
 anchor_bottom = 16.186
-offset_left = 462.0
-offset_top = 393.0
-offset_right = -467.12
-offset_bottom = -165.44006
+offset_left = 431.0
+offset_top = 397.0
+offset_right = -498.12
+offset_bottom = -161.44006
 theme_override_styles/normal = SubResource("StyleBoxTexture_0a32q")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_b21jd")
 
@@ -73,10 +75,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.748001
 anchor_bottom = 16.105001
-offset_left = 460.0
-offset_top = 501.0
-offset_right = -465.92004
-offset_bottom = -54.200073
+offset_left = 430.0
+offset_top = 476.0
+offset_right = -495.92004
+offset_bottom = -79.20007
 theme_override_styles/normal = SubResource("StyleBoxTexture_vhj1a")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_pa5ro")
 
