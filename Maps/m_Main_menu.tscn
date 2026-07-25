@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://cva7moi2c6qui"]
 
-[ext_resource type="Script" uid="uid://xji88lf77lmr" path="res://Maps/m_main_menu.gd" id="1_niko4"]
-[ext_resource type="Texture2D" uid="uid://cyclrmpumules" path="res://Assets/tiles/background/Sprite-0017.png" id="2_jxnyh"]
-[ext_resource type="Texture2D" uid="uid://dcdwffi473gur" path="res://Assets/buttons/start1.png" id="2_sduc7"]
-[ext_resource type="Texture2D" uid="uid://dqf2jbr8no4db" path="res://Assets/buttons/start12.png" id="3_jxnyh"]
-[ext_resource type="Texture2D" uid="uid://cuayi2qh6d4sa" path="res://Assets/buttons/options.png" id="4_6yjqt"]
-[ext_resource type="Texture2D" uid="uid://pnbvfp47iykb" path="res://Assets/buttons/options2.png" id="5_8uf7q"]
-[ext_resource type="Texture2D" uid="uid://b3wuuah64cr42" path="res://Assets/buttons/quit1.png" id="6_ywa8y"]
-[ext_resource type="Texture2D" uid="uid://c5jqnu3utcr6p" path="res://Assets/buttons/quit2.png" id="7_figty"]
+[ext_resource type="Script" uid="uid://xji88lf77lmr" path="res://Scripts/s_main_menu.gd" id="1_niko4"]
+[ext_resource type="Texture2D" uid="uid://cyclrmpumules" path="res://Assets/Sprites/tiles/background/Sprite-0017.png" id="2_jxnyh"]
+[ext_resource type="Texture2D" uid="uid://dcdwffi473gur" path="res://Assets/Sprites/buttons/start1.png" id="2_sduc7"]
+[ext_resource type="Texture2D" uid="uid://dqf2jbr8no4db" path="res://Assets/Sprites/buttons/start12.png" id="3_jxnyh"]
+[ext_resource type="Texture2D" uid="uid://cuayi2qh6d4sa" path="res://Assets/Sprites/buttons/options.png" id="4_6yjqt"]
+[ext_resource type="Texture2D" uid="uid://pnbvfp47iykb" path="res://Assets/Sprites/buttons/options2.png" id="5_8uf7q"]
+[ext_resource type="Texture2D" uid="uid://b3wuuah64cr42" path="res://Assets/Sprites/buttons/quit1.png" id="6_ywa8y"]
+[ext_resource type="Texture2D" uid="uid://c5jqnu3utcr6p" path="res://Assets/Sprites/buttons/quit2.png" id="7_figty"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ogq8d"]
 texture = ExtResource("2_jxnyh")
