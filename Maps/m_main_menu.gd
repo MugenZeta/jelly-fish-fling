@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 
 
 func _on_start_pressed() -> void:
-	get_tree().change_scene_to_file("res://Maps/m_TestMap.tscn")
+	get_tree().change_scene_to_file("res://Maps/m_level 1.tscn")
 
 
 func _on_options_pressed() -> void:

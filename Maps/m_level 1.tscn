@@ -1,6 +1,8 @@
 [gd_scene format=4 uid="uid://crkcm37w11kh"]
 
 [ext_resource type="PackedScene" uid="uid://nvylhcr2ulwv" path="res://Objects/o_Wall.tscn" id="1_6tlv2"]
+[ext_resource type="PackedScene" uid="uid://c0d5mgxiqanpv" path="res://Objects/o_WinFlag.tscn" id="2_bbc2g"]
+[ext_resource type="PackedScene" uid="uid://cet8fujfxr876" path="res://Objects/o_Player.tscn" id="3_pqyu4"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oi3dc"]
 load_path = "res://.godot/imported/tileset1.png-73f0ef16fbd8658fa9aa7f3a8c8ad2d0.ctex"
@@ -235,3 +237,9 @@ scale = Vector2(2.065, 1)
 [node name="OWall6" parent="." unique_id=552117318 instance=ExtResource("1_6tlv2")]
 position = Vector2(839.941, 438.996)
 scale = Vector2(1, 2.995)
+
+[node name="OWinFlag" parent="." unique_id=1001961933 instance=ExtResource("2_bbc2g")]
+position = Vector2(775.4293, 438.996)
+
+[node name="Player" parent="." unique_id=1342499611 instance=ExtResource("3_pqyu4")]
+position = Vector2(51.849335, 142.99747)
