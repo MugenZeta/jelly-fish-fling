@@ -33,18 +33,19 @@ texture = ExtResource("7_figty")
 [node name="Main Menu" type="Node2D" unique_id=1066719699]
 script = ExtResource("1_niko4")
 
-[node name="Panel" type="Panel" parent="." unique_id=1941040527]
-offset_left = 28.0
-offset_top = 113.0
-offset_right = 1041.0
-offset_bottom = 646.0
-theme_override_styles/panel = SubResource("StyleBoxTexture_ogq8d")
-
 [node name="Button_manager" type="Control" parent="." unique_id=1404335600]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Button_manager" unique_id=1941040527]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 113.0
+offset_right = 1041.0
+offset_bottom = 646.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ogq8d")
 
 [node name="start" type="Button" parent="Button_manager" unique_id=1103564714]
 layout_mode = 1
