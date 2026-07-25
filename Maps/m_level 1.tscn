@@ -218,28 +218,24 @@ tile_map_data = PackedByteArray("AAAEAA0AAAABAAAAAAAIAA0AAAABAAAAAAAMAA0AAAABAAA
 tile_set = SubResource("TileSet_eg0p3")
 rendering_quadrant_size = 64
 
-[node name="OWall" parent="." unique_id=1535871902 instance=ExtResource("1_6tlv2")]
-position = Vector2(120.71744, 199.522)
-scale = Vector2(3.005, 0.985)
+[node name="Walls" type="Node" parent="." unique_id=701126156]
 
-[node name="OWall2" parent="." unique_id=2010064879 instance=ExtResource("1_6tlv2")]
-position = Vector2(392.287, 311.47)
-scale = Vector2(3.97, 1)
-
-[node name="OWall3" parent="." unique_id=292754775 instance=ExtResource("1_6tlv2")]
-position = Vector2(656.186, 440.696)
-scale = Vector2(2.73, 1.02)
-
-[node name="OWall4" parent="." unique_id=1780902874 instance=ExtResource("1_6tlv2")]
-position = Vector2(747.809, 503.11)
-scale = Vector2(2.065, 1)
-
-[node name="OWall6" parent="." unique_id=552117318 instance=ExtResource("1_6tlv2")]
+[node name="OWall6" parent="Walls" unique_id=552117318 instance=ExtResource("1_6tlv2")]
 position = Vector2(839.941, 438.996)
 scale = Vector2(1, 2.995)
 
-[node name="OWinFlag" parent="." unique_id=1001961933 instance=ExtResource("2_bbc2g")]
-position = Vector2(775.4293, 438.996)
+[node name="OWall4" parent="Walls" unique_id=1780902874 instance=ExtResource("1_6tlv2")]
+position = Vector2(747.809, 503.11)
+scale = Vector2(2.065, 1)
 
-[node name="Player" parent="." unique_id=1342499611 instance=ExtResource("3_pqyu4")]
-position = Vector2(51.849335, 142.99747)
+[node name="OWall" parent="Walls" unique_id=1535871902 instance=ExtResource("1_6tlv2")]
+position = Vector2(120.71744, 199.522)
+scale = Vector2(3.005, 0.985)
+
+[node name="OWall2" parent="Walls" unique_id=2010064879 instance=ExtResource("1_6tlv2")]
+position = Vector2(392.287, 311.47)
+scale = Vector2(3.97, 1)
+
+[node name="OWall3" parent="Walls" unique_id=292754775 instance=ExtResource("1_6tlv2")]
+position = Vector2(656.186, 440.696)
+scale = Vector2(2.73, 1.02)

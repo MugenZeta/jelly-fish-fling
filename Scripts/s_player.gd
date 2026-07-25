@@ -1,7 +1,5 @@
 extends CharacterBody2D
-## Cannonball self-launcher.
 ## Hold left mouse to aim (power scales with cursor distance), release to fire.
-## Attach to a CharacterBody2D with a CollisionShape2D.
 
 signal launched(launch_velocity: Vector2)
  
