@@ -102,7 +102,7 @@ func _launch(v: Vector2) -> void:
 	velocity = v
 	launched.emit(v)
  
- 
+
 # --- Preview -----------------------------------------------------------------
  
 func _draw() -> void:

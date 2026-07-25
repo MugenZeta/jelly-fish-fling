@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://beswhpne7jfb5"]
 
-[ext_resource type="Script" uid="uid://c3jhwwqxrvu88" path="res://Objects/o_hazard.gd" id="1_81yjc"]
+[ext_resource type="Script" uid="uid://c3jhwwqxrvu88" path="res://Scripts/s_hazard.gd" id="1_81yjc"]
 [ext_resource type="Texture2D" uid="uid://bkqy4nws3jfli" path="res://Assets/tiles/hazarddtiles/hazardplaceholder.png" id="2_81yjc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y7yiq"]

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://2cfdcusnu52y"]
+
+[ext_resource type="Script" uid="uid://bjb8ew6espne0" path="res://Scripts/s_springbox.gd" id="1_hk26c"]
+[ext_resource type="Texture2D" uid="uid://btwp4ufnaijp2" path="res://Assets/tiles/level 1/springplaceholder.png" id="2_lg30g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ogq8d"]
+size = Vector2(63, 65)
+
+[node name="Springbox" type="Area2D" unique_id=282230101]
+script = ExtResource("1_hk26c")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1515372079]
+texture = ExtResource("2_lg30g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1058368948]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_ogq8d")

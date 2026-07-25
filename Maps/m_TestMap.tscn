@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cet8fujfxr876" path="res://Objects/o_Player.tscn" id="1_x7okm"]
 [ext_resource type="PackedScene" uid="uid://nvylhcr2ulwv" path="res://Objects/o_Wall.tscn" id="2_ppdo8"]
 [ext_resource type="PackedScene" uid="uid://c0d5mgxiqanpv" path="res://Objects/o_WinFlag.tscn" id="3_ppdo8"]
+[ext_resource type="PackedScene" uid="uid://2cfdcusnu52y" path="res://Objects/o_springbox.tscn" id="4_wxrs5"]
 
 [node name="MTestMap" type="Node2D" unique_id=1853254307]
 
@@ -33,3 +34,6 @@ scale = Vector2(10, 1)
 
 [node name="OWinFlag" parent="." unique_id=1001961933 instance=ExtResource("3_ppdo8")]
 position = Vector2(991, 546)
+
+[node name="Springbox" parent="." unique_id=282230101 instance=ExtResource("4_wxrs5")]
+position = Vector2(443, 437)
