@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c0d5mgxiqanpv"]
+
+[ext_resource type="Texture2D" uid="uid://bf2t26mi1f3y8" path="res://Assets/Test Sprites/s_goal.png" id="1_3lw7q"]
+[ext_resource type="Script" uid="uid://diyjkjbxvq43i" path="res://Scripts/s_winFlag.gd" id="2_3sse6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4wthd"]
+size = Vector2(58, 56)
+
+[node name="OWinFlag" type="Area2D" unique_id=1001961933]
+script = ExtResource("2_3sse6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1546256972]
+texture_filter = 1
+texture = ExtResource("1_3lw7q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=136973814]
+shape = SubResource("RectangleShape2D_4wthd")
