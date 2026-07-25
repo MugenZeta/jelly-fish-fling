@@ -30,6 +30,10 @@ signal launched(launch_velocity: Vector2)
 @export var preview_steps: int = 48
 @export var preview_step_time: float = 0.033
 @export var preview_color: Color = Color(1.0, 0.85, 0.4)
+
+@export_group("Gameplay Settings")
+@export var player_turns: int
+ 
  
 var _aiming: bool = false
 var _air_launches_used: int = 0
@@ -37,11 +41,13 @@ var _air_launches_used: int = 0
  
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		if event.pressed:
+		if event.pressed && player_turns != 0:
 			if _can_launch():
 				_aiming = true
 		elif _aiming:
 			_aiming = false
+			player_turns -= 1
+			print("")
 			_launch(_launch_velocity())
 			queue_redraw()
  

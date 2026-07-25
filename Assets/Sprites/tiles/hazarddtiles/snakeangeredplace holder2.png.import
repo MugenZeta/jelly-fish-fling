@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xw5kxdntl75b"
-path="res://.godot/imported/snakeangeredplace holder2.png-cd4e5238e7b3e7df7219f3155b6e54f3.ctex"
+path="res://.godot/imported/snakeangeredplace holder2.png-dd75ed97c75127a00fb794d8ee888fb2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tiles/hazarddtiles/snakeangeredplace holder2.png"
-dest_files=["res://.godot/imported/snakeangeredplace holder2.png-cd4e5238e7b3e7df7219f3155b6e54f3.ctex"]
+source_file="res://Assets/Sprites/tiles/hazarddtiles/snakeangeredplace holder2.png"
+dest_files=["res://.godot/imported/snakeangeredplace holder2.png-dd75ed97c75127a00fb794d8ee888fb2.ctex"]
 
 [params]
 

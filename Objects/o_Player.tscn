@@ -11,6 +11,7 @@ size = Vector2(53, 49)
 
 [node name="Player" type="CharacterBody2D" unique_id=1342499611]
 script = ExtResource("1_tx4u5")
+player_turns = 5
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2011023888]
 texture_filter = 1
