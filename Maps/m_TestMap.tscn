@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cet8fujfxr876" path="res://Objects/o_Player.tscn" id="1_x7okm"]
 [ext_resource type="PackedScene" uid="uid://nvylhcr2ulwv" path="res://Objects/o_Wall.tscn" id="2_ppdo8"]
+[ext_resource type="PackedScene" uid="uid://c0d5mgxiqanpv" path="res://Objects/o_WinFlag.tscn" id="3_ppdo8"]
 
 [node name="MTestMap" type="Node2D" unique_id=1853254307]
 
@@ -29,3 +30,6 @@ scale = Vector2(0.5, 11)
 [node name="OWall5" parent="." unique_id=1386172384 instance=ExtResource("2_ppdo8")]
 position = Vector2(550, 614)
 scale = Vector2(10, 1)
+
+[node name="OWinFlag" parent="." unique_id=1001961933 instance=ExtResource("3_ppdo8")]
+position = Vector2(991, 546)
