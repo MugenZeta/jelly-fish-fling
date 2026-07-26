@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btwp4ufnaijp2"
-path="res://.godot/imported/springplaceholder.png-8e3d2d561446d6739709f11003ebbea4.ctex"
+uid="uid://d1axog714y3yn"
+path="res://.godot/imported/snakebody holder1.png-2a83bf8f78fae8bb74bdfd905f9842f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/tiles/level 1/springplaceholder.png"
-dest_files=["res://.godot/imported/springplaceholder.png-8e3d2d561446d6739709f11003ebbea4.ctex"]
+source_file="res://Assets/Sprites/tiles/hazarddtiles/snakebody holder1.png"
+dest_files=["res://.godot/imported/snakebody holder1.png-2a83bf8f78fae8bb74bdfd905f9842f3.ctex"]
 
 [params]
 

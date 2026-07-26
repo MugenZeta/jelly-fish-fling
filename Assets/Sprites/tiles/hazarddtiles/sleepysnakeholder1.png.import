@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btwp4ufnaijp2"
-path="res://.godot/imported/springplaceholder.png-8e3d2d561446d6739709f11003ebbea4.ctex"
+uid="uid://b3qspkwl8vo6"
+path="res://.godot/imported/sleepysnakeholder1.png-0e255a1fe8f4b198baaa402cc3f01b6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/tiles/level 1/springplaceholder.png"
-dest_files=["res://.godot/imported/springplaceholder.png-8e3d2d561446d6739709f11003ebbea4.ctex"]
+source_file="res://Assets/Sprites/tiles/hazarddtiles/sleepysnakeholder1.png"
+dest_files=["res://.godot/imported/sleepysnakeholder1.png-0e255a1fe8f4b198baaa402cc3f01b6e.ctex"]
 
 [params]
 
