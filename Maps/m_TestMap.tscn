@@ -36,4 +36,5 @@ scale = Vector2(10, 1)
 position = Vector2(991, 546)
 
 [node name="Springbox" parent="." unique_id=282230101 instance=ExtResource("4_wxrs5")]
-position = Vector2(443, 437)
+position = Vector2(457, 364)
+rotation = 0.9250245

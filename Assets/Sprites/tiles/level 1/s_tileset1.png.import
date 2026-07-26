@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtybspgd4m73j"
-path="res://.godot/imported/sandstone1.png-1e2825ead521d9c48d4af72ac03c75cf.ctex"
+uid="uid://be1bnenrnorbw"
+path="res://.godot/imported/s_tileset1.png-31438d93f69d68b359cccb5037cd5fdf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/tiles/level 1/sandstone1.png"
-dest_files=["res://.godot/imported/sandstone1.png-1e2825ead521d9c48d4af72ac03c75cf.ctex"]
+source_file="res://Assets/Sprites/tiles/level 1/s_tileset1.png"
+dest_files=["res://.godot/imported/s_tileset1.png-31438d93f69d68b359cccb5037cd5fdf.ctex"]
 
 [params]
 

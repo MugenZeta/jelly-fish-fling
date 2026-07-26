@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btwp4ufnaijp2"
-path="res://.godot/imported/springplaceholder.png-eb749992b4a90f4fa3663717919973c4.ctex"
+uid="uid://dtybspgd4m73j"
+path="res://.godot/imported/s_sandstone1.png-bcd6fd5313e8a86b8257dcc1565ab574.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tiles/level 1/springplaceholder.png"
-dest_files=["res://.godot/imported/springplaceholder.png-eb749992b4a90f4fa3663717919973c4.ctex"]
+source_file="res://Assets/Sprites/tiles/level 1/s_sandstone1.png"
+dest_files=["res://.godot/imported/s_sandstone1.png-bcd6fd5313e8a86b8257dcc1565ab574.ctex"]
 
 [params]
 
