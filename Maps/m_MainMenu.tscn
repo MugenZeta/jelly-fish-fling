@@ -8,6 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://pnbvfp47iykb" path="res://Assets/Sprites/buttons/options2.png" id="6_61yac"]
 [ext_resource type="Texture2D" uid="uid://b3wuuah64cr42" path="res://Assets/Sprites/buttons/quit1.png" id="7_4gm5c"]
 [ext_resource type="Texture2D" uid="uid://c5jqnu3utcr6p" path="res://Assets/Sprites/buttons/quit2.png" id="8_xilap"]
+[ext_resource type="AudioStream" uid="uid://tcu3808gt2da" path="res://Assets/Sound/Music/Blue Surprise NES.wav" id="9_c3pme"]
+[ext_resource type="AudioStream" uid="uid://kykyfuekld2r" path="res://Assets/Sound/SFX/UI01.wav" id="10_1i6sx"]
+[ext_resource type="AudioStream" uid="uid://d0tsii2xl1d88" path="res://Assets/Sound/SFX/UI02.wav" id="11_ecvge"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ogq8d"]
 texture = ExtResource("2_c3pme")
@@ -83,6 +86,25 @@ offset_bottom = -79.20007
 theme_override_styles/normal = SubResource("StyleBoxTexture_vhj1a")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_pa5ro")
 
+[node name="Sound" type="Node" parent="." unique_id=925936221]
+
+[node name="Music" type="AudioStreamPlayer" parent="Sound" unique_id=1880874381]
+stream = ExtResource("9_c3pme")
+autoplay = true
+
+[node name="SFX_Hover" type="AudioStreamPlayer" parent="Sound" unique_id=252732410]
+stream = ExtResource("10_1i6sx")
+
+[node name="SFX_Confirm" type="AudioStreamPlayer" parent="Sound" unique_id=838046894]
+stream = ExtResource("11_ecvge")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=533912061]
+position = Vector2(543, 381)
+zoom = Vector2(1.16, 1.22)
+
+[connection signal="mouse_entered" from="Button_manager/start" to="." method="_on_start_mouse_entered"]
 [connection signal="pressed" from="Button_manager/start" to="." method="_on_start_pressed"]
+[connection signal="mouse_entered" from="Button_manager/options" to="." method="_on_options_mouse_entered"]
 [connection signal="pressed" from="Button_manager/options" to="." method="_on_options_pressed"]
+[connection signal="mouse_entered" from="Button_manager/Quit" to="." method="_on_quit_mouse_entered"]
 [connection signal="pressed" from="Button_manager/Quit" to="." method="_on_quit_pressed"]

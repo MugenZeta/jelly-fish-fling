@@ -1,7 +1,6 @@
-[gd_scene format=4 uid="uid://crkcm37w11kh"]
+[gd_scene format=4 uid="uid://b6h17e2xal856"]
 
 [ext_resource type="PackedScene" uid="uid://nvylhcr2ulwv" path="res://Objects/o_Wall.tscn" id="1_6tlv2"]
-[ext_resource type="PackedScene" uid="uid://c0d5mgxiqanpv" path="res://Objects/o_WinFlag.tscn" id="2_bbc2g"]
 [ext_resource type="PackedScene" uid="uid://cet8fujfxr876" path="res://Objects/o_Player.tscn" id="3_pqyu4"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oi3dc"]
@@ -217,6 +216,9 @@ sources/0 = SubResource("TileSetAtlasSource_bbc2g")
 tile_map_data = PackedByteArray("AAAEAA0AAAABAAAAAAAIAA0AAAABAAAAAAAMAA0AAAABAAAAAAAXABQAAAABAAAAAAAbABQAAAABAAAAAAAfABQAAAABAAAAAAAtABwAAAABAAAAAAAxABwAAAAAAAMAAAAtACAAAAABAAEAAAAxACAAAAABAAEAAAA1ACAAAAABAAEAAAA1ABwAAAABAAEAAAA1ABgAAAABAAAAAAApABwAAAABAAAAAAAmABwAAAABAAAAAAATABQAAAABAAAAAAA=")
 tile_set = SubResource("TileSet_eg0p3")
 rendering_quadrant_size = 64
+
+[node name="Player" parent="TileMapLayer" unique_id=1342499611 instance=ExtResource("3_pqyu4")]
+position = Vector2(117, 134)
 
 [node name="Walls" type="Node" parent="." unique_id=701126156]
 

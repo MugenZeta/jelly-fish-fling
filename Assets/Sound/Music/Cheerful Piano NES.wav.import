@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b2qrvbkilsk4c"
+path="res://.godot/imported/Cheerful Piano NES.wav-56e4eb6e3142ab1ae3628547f50247fd.sample"
+
+[deps]
+
+source_file="res://Assets/Sound/Music/Cheerful Piano NES.wav"
+dest_files=["res://.godot/imported/Cheerful Piano NES.wav-56e4eb6e3142ab1ae3628547f50247fd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

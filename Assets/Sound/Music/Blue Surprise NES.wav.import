@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://tcu3808gt2da"
+path="res://.godot/imported/Blue Surprise NES.wav-35566a83ed5721a631c3facda82b0681.sample"
+
+[deps]
+
+source_file="res://Assets/Sound/Music/Blue Surprise NES.wav"
+dest_files=["res://.godot/imported/Blue Surprise NES.wav-35566a83ed5721a631c3facda82b0681.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
