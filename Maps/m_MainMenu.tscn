@@ -11,6 +11,7 @@
 [ext_resource type="AudioStream" uid="uid://tcu3808gt2da" path="res://Assets/Sound/Music/Blue Surprise NES.wav" id="9_c3pme"]
 [ext_resource type="AudioStream" uid="uid://kykyfuekld2r" path="res://Assets/Sound/SFX/UI01.wav" id="10_1i6sx"]
 [ext_resource type="AudioStream" uid="uid://d0tsii2xl1d88" path="res://Assets/Sound/SFX/UI02.wav" id="11_ecvge"]
+[ext_resource type="Texture2D" uid="uid://4ycsa22yprkm" path="res://Assets/Sprites/tiles/background/blobfishfling.png" id="12_ecvge"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ogq8d"]
 texture = ExtResource("2_c3pme")
@@ -55,10 +56,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.792002
 anchor_bottom = 16.219
-offset_left = 438.0
-offset_top = 325.0
-offset_right = -495.68005
-offset_bottom = -238.76001
+offset_left = 435.0
+offset_top = 391.0
+offset_right = -498.68005
+offset_bottom = -172.76001
 theme_override_styles/normal = SubResource("StyleBoxTexture_njwvf")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_s6xo6")
 
@@ -67,10 +68,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.828001
 anchor_bottom = 16.186
-offset_left = 431.0
-offset_top = 397.0
-offset_right = -498.12
-offset_bottom = -161.44006
+offset_left = 428.0
+offset_top = 463.0
+offset_right = -501.12
+offset_bottom = -95.44006
 theme_override_styles/normal = SubResource("StyleBoxTexture_0a32q")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_b21jd")
 
@@ -79,10 +80,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.748001
 anchor_bottom = 16.105001
-offset_left = 430.0
-offset_top = 476.0
-offset_right = -495.92004
-offset_bottom = -79.20007
+offset_left = 427.0
+offset_top = 542.0
+offset_right = -498.92004
+offset_bottom = -13.200073
 theme_override_styles/normal = SubResource("StyleBoxTexture_vhj1a")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_pa5ro")
 
@@ -101,6 +102,10 @@ stream = ExtResource("11_ecvge")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=533912061]
 position = Vector2(543, 381)
 zoom = Vector2(1.16, 1.22)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=890971908]
+position = Vector2(559, 280)
+texture = ExtResource("12_ecvge")
 
 [connection signal="mouse_entered" from="Button_manager/start" to="." method="_on_start_mouse_entered"]
 [connection signal="pressed" from="Button_manager/start" to="." method="_on_start_pressed"]

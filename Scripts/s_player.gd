@@ -52,6 +52,8 @@ func _unhandled_input(event: InputEvent) -> void:
 			print(player_turns)
 			_launch(_launch_velocity())
 			queue_redraw()
+		elif player_turns == 0:
+			_game_over()
  
  
 func _process(_delta: float) -> void:
@@ -119,7 +121,15 @@ func spring_bounce(impulse: Vector2, preserve_momentum: bool = true) -> void:
 	_spring_lock = 0.12
 	_air_launches_used = 0
 	launched.emit(velocity)
+	
  
+func _game_over() ->void:
+	get_tree().change_scene_to_file("res://Maps/m_MainMenu.tscn")
+
+func _lose_turn(amount: int) -> void:
+	player_turns =- amount
+	if player_turns <= 0:
+		_game_over()
 
 # --- Preview -----------------------------------------------------------------
  

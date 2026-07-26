@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://14w87lxb1a1s"
-path="res://.godot/imported/spr_healthlettusn.png-649fa9e0837c79bb146ab78ec2acf1fb.ctex"
+uid="uid://ch0koa76lrhq8"
+path="res://.godot/imported/s_hazard.png-96bdda9e9dea307452ec2fe105f458e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Test Sprites/spr_healthlettusn.png"
-dest_files=["res://.godot/imported/spr_healthlettusn.png-649fa9e0837c79bb146ab78ec2acf1fb.ctex"]
+source_file="res://Assets/Test Sprites/s_hazard.png"
+dest_files=["res://.godot/imported/s_hazard.png-96bdda9e9dea307452ec2fe105f458e4.ctex"]
 
 [params]
 

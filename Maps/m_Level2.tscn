@@ -7,30 +7,6 @@
 
 [node name="MLevel2" type="Area2D" unique_id=1705979769]
 
-[node name="OWall" parent="." unique_id=1535871902 instance=ExtResource("1_mptxi")]
-position = Vector2(552.025, 507.20996)
-scale = Vector2(7.64, 1)
-
-[node name="OWall2" parent="." unique_id=1007926048 instance=ExtResource("1_mptxi")]
-position = Vector2(796.505, 254.04633)
-scale = Vector2(1, 8.98)
-
-[node name="OWall3" parent="." unique_id=1838986760 instance=ExtResource("1_mptxi")]
-position = Vector2(552.025, -1.9390001)
-scale = Vector2(8.56, 0.96)
-
-[node name="OWall4" parent="." unique_id=940990873 instance=ExtResource("1_mptxi")]
-position = Vector2(307.54504, 139.64633)
-scale = Vector2(1.125, 4.34)
-
-[node name="OWall5" parent="." unique_id=509716582 instance=ExtResource("1_mptxi")]
-position = Vector2(477.46133, 295.84637)
-scale = Vector2(6.595, 1.035)
-
-[node name="OWall6" parent="." unique_id=101249250 instance=ExtResource("1_mptxi")]
-position = Vector2(653.46155, 230.94632)
-scale = Vector2(1, 3.045)
-
 [node name="Springbox" parent="." unique_id=282230101 instance=ExtResource("2_gmsyy")]
 position = Vector2(735.96155, 444.3463)
 
@@ -44,3 +20,29 @@ scale = Vector2(4.275, 1.07)
 
 [node name="Player" parent="." unique_id=1342499611 instance=ExtResource("4_u6a0l")]
 position = Vector2(391.66147, 444.3463)
+
+[node name="Walls" type="Node" parent="." unique_id=783028319]
+
+[node name="OWall" parent="Walls" unique_id=1535871902 instance=ExtResource("1_mptxi")]
+position = Vector2(552.025, 507.20996)
+scale = Vector2(7.64, 1)
+
+[node name="OWall2" parent="Walls" unique_id=1007926048 instance=ExtResource("1_mptxi")]
+position = Vector2(796.505, 254.04633)
+scale = Vector2(1, 8.98)
+
+[node name="OWall3" parent="Walls" unique_id=1838986760 instance=ExtResource("1_mptxi")]
+position = Vector2(552.025, -1.9390001)
+scale = Vector2(8.56, 0.96)
+
+[node name="OWall4" parent="Walls" unique_id=940990873 instance=ExtResource("1_mptxi")]
+position = Vector2(307.54504, 139.64633)
+scale = Vector2(1.125, 4.34)
+
+[node name="OWall5" parent="Walls" unique_id=509716582 instance=ExtResource("1_mptxi")]
+position = Vector2(477.46133, 295.84637)
+scale = Vector2(6.595, 1.035)
+
+[node name="OWall6" parent="Walls" unique_id=101249250 instance=ExtResource("1_mptxi")]
+position = Vector2(653.46155, 230.94632)
+scale = Vector2(1, 3.045)

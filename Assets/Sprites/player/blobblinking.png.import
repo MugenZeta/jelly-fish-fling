@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djx8pkl0nhtpq"
-path="res://.godot/imported/bloblfishleaping.png-f905ac7fa307ff407cf27879f9838115.ctex"
+uid="uid://f8sbo4140jmc"
+path="res://.godot/imported/blobblinking.png-c8002c13278ac9adf393229ae2e564b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/char/bloblfishleaping.png"
-dest_files=["res://.godot/imported/bloblfishleaping.png-f905ac7fa307ff407cf27879f9838115.ctex"]
+source_file="res://Assets/Sprites/player/blobblinking.png"
+dest_files=["res://.godot/imported/blobblinking.png-c8002c13278ac9adf393229ae2e564b0.ctex"]
 
 [params]
 
