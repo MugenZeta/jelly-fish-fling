@@ -2,6 +2,7 @@ extends CharacterBody2D
 ## Hold left mouse to aim (power scales with cursor distance), release to fire.
 
 signal launched(launch_velocity: Vector2)
+signal spring_luanched(launch_velocity: Vector2)
  
 @export_group("Launch")
 ## Speed at 100% power, in pixels/second.
@@ -37,6 +38,7 @@ signal launched(launch_velocity: Vector2)
  
 var _aiming: bool = false
 var _air_launches_used: int = 0
+var _spring_lock: float = 0.0
  
  
 func _unhandled_input(event: InputEvent) -> void:
@@ -47,7 +49,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		elif _aiming:
 			_aiming = false
 			player_turns -= 1
-			print("")
+			print(player_turns)
 			_launch(_launch_velocity())
 			queue_redraw()
  
@@ -105,6 +107,18 @@ func _launch(v: Vector2) -> void:
 		_air_launches_used += 1
 	velocity = v
 	launched.emit(v)
+	
+## Called by Spring nodes. `impulse` is a full velocity vector, not a force.
+func spring_bounce(impulse: Vector2, preserve_momentum: bool = true) -> void:
+	if preserve_momentum:
+		# Keep whatever speed we had perpendicular to the spring, replace the rest.
+		var dir: Vector2 = impulse.normalized()
+		velocity = (velocity - velocity.project(dir)) + impulse
+	else:
+		velocity = impulse
+	_spring_lock = 0.12
+	_air_launches_used = 0
+	launched.emit(velocity)
  
 
 # --- Preview -----------------------------------------------------------------

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btwp4ufnaijp2"
-path="res://.godot/imported/springplaceholder.png-8e3d2d561446d6739709f11003ebbea4.ctex"
+uid="uid://be1bnenrnorbw"
+path="res://.godot/imported/s_tileset1.png-31438d93f69d68b359cccb5037cd5fdf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/tiles/level 1/springplaceholder.png"
-dest_files=["res://.godot/imported/springplaceholder.png-8e3d2d561446d6739709f11003ebbea4.ctex"]
+source_file="res://Assets/Sprites/tiles/level 1/s_tileset1.png"
+dest_files=["res://.godot/imported/s_tileset1.png-31438d93f69d68b359cccb5037cd5fdf.ctex"]
 
 [params]
 
