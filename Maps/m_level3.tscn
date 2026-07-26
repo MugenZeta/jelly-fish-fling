@@ -22,8 +22,13 @@ position = Vector2(170.6817, 455.49152)
 position = Vector2(553.4637, 487.49155)
 scale = Vector2(12.91, 0.815)
 
+<<<<<<< Updated upstream
 [node name="OWinFlag" parent="." unique_id=1001961933 instance=ExtResource("4_rbco8")]
 position = Vector2(1004.926, 490.92273)
+=======
+[node name="OWinFlag" parent="." unique_id=1001961933 instance=ExtResource("3_0msma")]
+position = Vector2(1000.0945, 461.41156)
+>>>>>>> Stashed changes
 
 [node name="OWall3" parent="." unique_id=1185050822 instance=ExtResource("2_75gke")]
 position = Vector2(1000.0945, 534.4065)
