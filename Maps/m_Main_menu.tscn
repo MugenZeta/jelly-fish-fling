@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://cj4s07vhpdtji"]
+
+[ext_resource type="Script" uid="uid://xji88lf77lmr" path="res://Scripts/s_main_menu.gd" id="1_niko4"]
+[ext_resource type="Texture2D" uid="uid://cyclrmpumules" path="res://Assets/Sprites/tiles/background/Sprite-0017.png" id="2_jxnyh"]
+[ext_resource type="Texture2D" uid="uid://dcdwffi473gur" path="res://Assets/Sprites/buttons/start1.png" id="2_sduc7"]
+[ext_resource type="Texture2D" uid="uid://dqf2jbr8no4db" path="res://Assets/Sprites/buttons/start12.png" id="3_jxnyh"]
+[ext_resource type="Texture2D" uid="uid://cuayi2qh6d4sa" path="res://Assets/Sprites/buttons/options.png" id="4_6yjqt"]
+[ext_resource type="Texture2D" uid="uid://pnbvfp47iykb" path="res://Assets/Sprites/buttons/options2.png" id="5_8uf7q"]
+[ext_resource type="Texture2D" uid="uid://b3wuuah64cr42" path="res://Assets/Sprites/buttons/quit1.png" id="6_ywa8y"]
+[ext_resource type="Texture2D" uid="uid://c5jqnu3utcr6p" path="res://Assets/Sprites/buttons/quit2.png" id="7_figty"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ogq8d"]
+texture = ExtResource("2_jxnyh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_njwvf"]
+texture = ExtResource("2_sduc7")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s6xo6"]
+texture = ExtResource("3_jxnyh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0a32q"]
+texture = ExtResource("4_6yjqt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b21jd"]
+texture = ExtResource("5_8uf7q")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vhj1a"]
+texture = ExtResource("6_ywa8y")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pa5ro"]
+texture = ExtResource("7_figty")
+
+[node name="Main Menu" type="Node2D" unique_id=1066719699]
+script = ExtResource("1_niko4")
+
+[node name="Button_manager" type="Control" parent="." unique_id=1404335600]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Button_manager" unique_id=1941040527]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 113.0
+offset_right = 1041.0
+offset_bottom = 646.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ogq8d")
+
+[node name="start" type="Button" parent="Button_manager" unique_id=1103564714]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.792002
+anchor_bottom = 16.219
+offset_left = 438.0
+offset_top = 325.0
+offset_right = -495.68005
+offset_bottom = -238.76001
+theme_override_styles/normal = SubResource("StyleBoxTexture_njwvf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_s6xo6")
+
+[node name="options" type="Button" parent="Button_manager" unique_id=776787523]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.828001
+anchor_bottom = 16.186
+offset_left = 431.0
+offset_top = 397.0
+offset_right = -498.12
+offset_bottom = -161.44006
+theme_override_styles/normal = SubResource("StyleBoxTexture_0a32q")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_b21jd")
+
+[node name="Quit" type="Button" parent="Button_manager" unique_id=1981313434]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.748001
+anchor_bottom = 16.105001
+offset_left = 430.0
+offset_top = 476.0
+offset_right = -495.92004
+offset_bottom = -79.20007
+theme_override_styles/normal = SubResource("StyleBoxTexture_vhj1a")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_pa5ro")
+
+[connection signal="pressed" from="Button_manager/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button_manager/options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Button_manager/Quit" to="." method="_on_quit_pressed"]

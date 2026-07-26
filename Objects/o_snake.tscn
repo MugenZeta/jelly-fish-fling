@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dwnbkpfoddshj"]
 
 [ext_resource type="Script" uid="uid://c8lodr1s0qpmw" path="res://Scripts/s_snake.gd" id="1_48pst"]
-[ext_resource type="Texture2D" uid="uid://d1axog714y3yn" path="res://Assets/Sprites/tiles/hazarddtiles/snakebody holder1.png" id="2_wspfc"]
+[ext_resource type="Texture2D" uid="uid://bchxaxwsht52k" path="res://Assets/Sprites/tiles/hazarddtiles/snakeangeredplace holder1.png" id="2_48pst"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ogq8d"]
 radius = 15.789505
@@ -10,9 +10,12 @@ height = 34.830185
 [node name="OSnake" type="Area2D" unique_id=76547498]
 script = ExtResource("1_48pst")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1521421917]
-texture = ExtResource("2_wspfc")
+[node name="sleepysnake" type="Sprite2D" parent="." unique_id=1521421917]
+texture = ExtResource("2_48pst")
+
+[node name="angrysnake" type="Sprite2D" parent="." unique_id=1452740284]
+texture = ExtResource("2_48pst")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1582801834]
-position = Vector2(4.7742195, 4.682701)
+position = Vector2(5.1597557, 0)
 shape = SubResource("CapsuleShape2D_ogq8d")
